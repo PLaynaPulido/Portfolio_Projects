@@ -1,0 +1,34 @@
+<!-- Capstone Project Pablo Layna
+LogInScreen.html -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Log In - CarEase</title>
+  <link rel = "stylesheet" href = "stylecapstone.css">
+</head>
+<body>
+  <div class = "go-back">
+    <a href = "HomeScreen.html"> <!--Go Back to Home screen-->
+    <button type = "button" class = "bton1">&#8592;Go Back</button>
+    </a>
+  </div>
+  <h1>Log In</h1> <!--Title-->
+  <p>Please log in to get full access of our website and profile.</p>
+  <div class = "log-in">
+    <input type = "email" placeholder = "Email" id = "email" required><br> <!--Input Email-->
+    <br>
+    <input type = "password" placeholder = "Password" id = "password" required><br> <!--Input password-->
+    <br>
+    <input type = "checkbox" id = "rememberme" name = "rememberme" value = "rememberpassword">
+    <label for = "rememberme">Remember Me</label> <!--Checkbox to Remember password-->
+    <a style = "padding-left: 135px" href="ForgotPasswordScreen.html">Forgot password?</a><br> <!--Button in case user forgot password and be able to reset it-->
+    <br>
+    <a href = "HomeScreen.html"> <!--Logs and goes back to home screen-->
+    <button type = "button" class = "bton" id = "login-button" disabled>Log In</button><br>
+    <br>
+    </a>
+  </div>
+<script src = "FillLogin.js"></script> <!--Java script to block Log In button until all required input fields are complete-->
+</body>
+</html>

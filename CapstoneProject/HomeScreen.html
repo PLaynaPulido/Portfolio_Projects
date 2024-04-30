@@ -1,0 +1,92 @@
+<!-- Capstone Project Pablo Layna
+HomeScreen.html -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Home - CarEase</title>
+  <link rel = "stylesheet" href = "stylecapstone.css">
+</head>
+<body>
+  <button onclick="GoBackToTop()" id="GoTopButton" title="Go Back to Top">&#8679;</button> <!--Button to go back to top once you scroll down-->
+  <ul>
+    <li> <!-- Navigation Bar -->
+      <a style = "color: black" href = "HomeScreen.html">Home</a>
+    </li>
+    <li>
+      <a href = "AvailableCarsScreen.html">Available Cars</a>
+    </li>
+    <li>
+      <a href = "SellYourCarScreenOne.html">Sell Your Car</a>
+    </li>
+    <li>
+      <a href = "ContactScreen.html">Contact</a>
+    </li>
+    <li style = "float: right">
+      <a class = "SignUpBton" href = "SignUpScreen.html">Sign Up</a>
+    </li>
+    <li style = "float: right">
+      <a href = "LogInScreen.html">Log In</a>
+    </li>
+    <li style = "float: right">
+      <a href = "YourProfileScreen.html">Profile</a>
+    </li>
+  </ul>
+  <hr>
+  <img src = "CarEaseLogo.png" alt = "Logo" class = "Logo"> <!--Company's logo img-->
+  <p style = "text-align: center; font-weight: bold; font-size: 30px; color: black;"><em>Trustworthy Cars, Unbeatable Prices</em></p> <!--Slogan-->
+  <p style = "text-align: center; height: 50%; width: 80%; margin-left: auto; margin-right: auto;">Searching for a new fellow traveler? Our company offers you the best deals of good-quality car for any type of tastes and preferences that fits your budget.</p>
+  <p style = "text-align: center; height: 50%; width: 80%; margin-left: auto; margin-right: auto; padding-bottom: 20px;">Do you want to sell your car? Here you can facilitate the sale of your vehicle at the best prices and make contact with registered trusted buyers.</p>
+  <div class="homescreenbton btoncenter"> <!--Centers button in the screen below information-->
+    <a href="AvailableCarsScreen.html">
+    <button type= "button" class="btonleft">Start Searching Available Cars</button> <!--Button to go to Available cars screen-->
+    </a>
+    <a href="InformationAboutWebsite.html">  <!--Button to go to more information about website and functionality-->
+    <button type= "button" class="btonright">How This Works?</button>
+    </a>
+  </div>
+  <hr>
+  <p style = "text-align: center; height: 50%; width: 80%; margin-left: auto; margin-right: auto; font-size: 50px; font-weight: bold; color: red; padding-top: 40px;">Our History</p> <!--Company's history title-->
+  <table class = "hometablehistory"> <!--Table to add image and information about company-->
+    <tr>
+      <td><img src = "IMGHistory.jpeg" alt = "Ford F-150"></td>
+      <td>
+        <div class = "OurHistoryDescrip">
+          <p>CarEase, an online marketplace for used car buyers and sellers, is a company that was founded in 2023 with the commitment to offering the best deals around Broward County. with the help of our car inspectors and technicians, we can guarantee that all available cars are in good conditions and safe to drive to make sure that you're completely satisfied with your purchase. Since we want to satisfy buyers and sellers, we offer to all our users we possibility of facilitate the selling of your car without having to worry if your car has any mechanical problem and if the stated price does not match its current condition. Whether you're in the market for a sleek sedan, a rugged SUV, or a sporty coupe, we have something for everyone on our lot.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <p style = "text-align: center; height: 50%; width: 80%; margin-left: auto; margin-right: auto; font-size: 50px; font-weight: bold; color: red; padding-top: 40px;">About Our Accomplishments</p> <!--Title about company's Accomplishments-->
+  <table class = "hometableaccom"> <!--Table for different accomplishment facts from the company-->
+    <tr>
+      <td>
+        <p style = "text-align: center; font-weight: bold; font-size: 40px;">+250</p>
+        <p style = "text-align: center; font-weight: bold; font-size: 24px;">CARS SOLD</p>
+        <p style = "text-align: center; font-size: 16px;">In Broward County with the best price in an average sales time of 10 days since published.</p>
+      </td>
+      <td>
+        <p style = "text-align: center; font-weight: bold; font-size: 40px;">+$400</p>
+        <p style = "text-align: center; font-weight: bold; font-size: 24px;">SALE PROFIT</p>
+        <p style = "text-align: center; font-size: 16px;">Of our user sellers when selling their cars in our company instead of in another alternatives.</p>
+      </td>
+      <td>
+        <p style = "text-align: center; font-weight: bold; font-size: 40px;">98.5%</p>
+        <p style = "text-align: center; font-weight: bold; font-size: 24px;">NO MALFUCTIONS AFTER PURCHASE</p>
+        <p style = "text-align: center; font-size: 16px;">Our company offers the best general check of our vehicles to guarantee the highest possible quality of the product.</p>
+      </td>
+      <td>
+        <p style = "text-align: center; font-weight: bold; font-size: 40px;">4.8/5.0</p>
+        <p style = "text-align: center; font-weight: bold; font-size: 24px;">OF +400 GOOGLE REVIEWS</p>
+        <p style = "text-align: center; font-size: 16px;">Our effort and dedication in offer a reliable alternative towards other options has shown great satisfaction from our consumers.</p>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <footer> <!--Footer with info about project name and author-->
+    <p>Capstone Project 2023<br>Author: Pablo Layna<br><a href="mailto:pl587@mynsu.nova.edu">pl587@mynsu.nova.edu</a></p>
+  </footer>
+<script src = "scriptCapstone.js"></script> <!--Java script to make work the back to top button-->
+</body>
+</html>

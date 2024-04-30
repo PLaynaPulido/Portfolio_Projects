@@ -1,0 +1,46 @@
+<!-- Capstone Project Pablo Layna
+EditUserInformation.html -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Edit User Information - CarEase</title>
+  <link rel = "stylesheet" href = "stylecapstone.css">
+</head>
+<body>
+  <a href="YourProfileScreen.html">
+  <div class = "go-back"> <!--Go Back to your profile screen-->
+    <button type = "button" class = "bton1">&#8592;Go Back</button>
+  </div>
+  </a>
+  <h1>Edit User Information</h1> <!--Title-->
+  <h4 style = "color: red">User Information</h4>
+  <div class = "log-in">
+    <input type = "firstName" placeholder = "First Name" id = "firstName" required><br> <!--Input First Name-->
+    <br>
+    <input type = "lastName" placeholder = "Last Name" id = "lastName" required><br> <!--Input Last Name-->
+    <br>
+    <input type = "middleName" placeholder = "Middle Name (optional)" id = "middleName"><br> <!--Input Middle Name (optional)-->
+    <br>
+    <input type = "email" placeholder = "Email" id = "email" required><br> <!--Input Email-->
+    <br>
+    <input type = "tel" placeholder = "Phone Number" id = "phoneNumber" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required><p style = "font-size: 14px">123-456-7890</p> <!--Input Phone Number in the proper format-->
+    <input type = "password" placeholder = "Password" id = "password" required><br> <!--Input password-->
+    <br>
+    <input type = "password" placeholder = "Corfirm Password" id = "corfirmPassword" required><br> <!--Input confirm password-->
+  </div>
+  <h4 style = "color: red">If changing your password, it must contain:</h4> <!--Info about password requirements-->
+  <p style = "font-size: 14px" id = "length" class = "invalid">-A length of 8 characters or more.</p>
+  <p style = "font-size: 14px" id = "capital" class = "invalid">-One uppercase letter</p>
+  <p style = "font-size: 14px" id = "number" class = "invalid">-One digit number</p>
+  <p style = "font-size: 14px" id = "special" class = "invalid">-One special character (-@!?$#)</p>
+  <a href="YourProfileScreen.html">
+  <div class = "log-in"> <!--Button to save changes (goes back to your profile screen)-->
+    <button type = "button" class = "bton" id = "EUser-button" disabled>Save Changes</button><br>
+    <br>
+  </div>
+  </a>
+<script src = "scriptPassword.js"></script> <!--Java script to check password and change password requirements text to green if password contains the specific requirement-->
+<script src = "EUserFill.js"></script> <!--Java script to block Save Changes button until all required input fields are complete-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- Capstone Project Pablo Layna
+SellYourCarScreenOne.html -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Sell Your Car: Car Information - CarEase</title>
+  <link rel = "stylesheet" href = "stylecapstone.css">
+</head>
+<body>
+  <a href="HomeScreen.html">
+  <div class = "go-back"> <!--Go back button to go to Home-->
+    <button type = "button" class = "bton1">&#8592;Go Back</button>
+  </div>
+  </a>
+  <h1>Sell Your Car: Car Information</h1> <!--Title-->
+  <p>Want to sell your car? Please give us information about your car so we can have a prior understanding of the vehicle. Attach a picture of the car in the "Upload Image" button.</p>
+  <div class = "log-in">
+    <input type = "carName" placeholder = "Car's Name" id = "carName" required><br> <!--Car's name input-->
+    <br>
+    <input type = "lastName" placeholder = "Model" id = "model" required><br> <!--Model input-->
+    <br>
+    <input type = "number" placeholder = "Year" id = "year" required><br> <!--Year input (only numbers)-->
+    <br>
+    <input type = "classname" placeholder = "Class" id = "class" required><br> <!--Class input-->
+    <br>
+    <input type = "number" placeholder = "Miles" id = "totalMiles" required><br> <!--Miles input (only numbers)-->
+    <br>
+  <div class = "dollarinput">
+    <label>$</label>
+    <input type = "number" placeholder = "Initial Price" id = "initialPrice" required><br> <!--Initial price input (only numbers)-->
+    <br>
+  </div>
+  </div>
+  <p style = "font-weight: bold">Information About Car:</p>
+  <div>
+    <textarea style = "height:200px;width:800px;font-size:14pt;" id = "multiliner" name = "multiliner"></textarea><br><!--Allows user to put information about the car he wants to sell-->
+  </div>
+  <h3 style = "color: red">Please upload image of your car:</h3><br>
+  <div class = "uploadbutton">
+    <input type = "file" id = "upload" hidden/> <!--Button to upload image of car-->
+    <label for = "upload">Upload Image</label><br>
+    <br>
+    <br>
+  </div>
+  <a href="SellYourCarScreenTwo.html">
+  <div class = "log-in">
+    <button type = "button" class = "bton" id = "next-button" disabled>Next: Owner's Information</button><br> <!--Button to access part 2 of selling car-->
+    <br>
+  </div>
+  </a>
+<script src = "SellYourCarFill1.js"></script> <!--Java script to block Next button until all required input are filled-->
+</body>
+</html>
