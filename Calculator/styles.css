@@ -1,0 +1,53 @@
+*, *::BeforeUnloadEvent, *::after{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, purple, orange);
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    /*grif-template-columns crea el numero de elementos por columna y su tamaño para cada uno.
+    Repeat hace que las columans se repitan un total de 4 veces.
+    grid-template-rows minmax(120px, auto): crea el primer row donde aparece el output con un
+    minimo tamaño de 120px y un maximo ilimitado, expandiendose cuando sea necesario. Crea 5 rows de cada boton
+    tamaño de 120px. */
+}
+.calculator-grid > button{ /*Seleciona todos los botones de la clase calculator-grid*/
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+.calculator-grid > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1 / -1; /*seleciona desde la primera columna hasta la ultima columna*/
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end; /*Coloca los elementos a la derecha del todo*/
+    justify-content: space-around; /*separa los elementos entre ellos*/
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word; /*Permite romper el output si sobrepasa el tamaño del background de la calculadora*/
+    word-break: break-all;
+}
+.output .previous-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
